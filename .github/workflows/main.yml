@@ -7,3 +7,9 @@ jobs:
        steps:
           - name: Checkout Code
             uses: actions/checkout@v4
+
+          - name: Echo
+            run: |
+               echo "hello world"
+               sudo apt update
+               echo "packages updated successfully"
